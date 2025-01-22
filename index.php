@@ -1,45 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>Blockusm</title>
 
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img class="card-img-right" src="img/logo.png" alt="" height="50" href="perfil.php">
+      <a class="navbar-brand" href="index.php">Blockbusm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="perfil.php">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="peliculas.php">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle">TOPS</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="5mejores.php">Mejores 5 peliculas</a>
+              <a class="dropdown-item" href="5peores.php">Peores 5 peliculas</a>
+              <a class="dropdown-item" href="5mascomentadas.php">Las 5 peliculas más comentadas</a>
+              <a class="dropdown-item" href="favoritasG.php">Favoritas para publico (G)</a>
+              <a class="dropdown-item" href="favoritasPG.php">Favoritas para publico (PG)</a>
+              <a class="dropdown-item" href="favoritasR.php">Favoritas para publico (R)</a>
+              <a class="dropdown-item" href="pocostock.php">ULTIMAS UNIDADES</a>
+          </li>
+        </ul>
+        <form class="d-flex" method="POST" ACTION="busqueda.php">
+          <input class="form-control me-sm-2" type="text" placeholder="Buscar" name="buscar">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit" name="accion">Buscar</button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link ">
+              <?php echo $nombreUsuario ?>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">
+              <?php echo $dinero; ?>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="cerrar.php">Cerrar</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+  <div class="container">
+    <br />
+    <div class="row">
 
 <div class="jumbotron">
     <h1 class="display-3">Bienvenidos a Blockbusm:
