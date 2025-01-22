@@ -13,6 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <h2 >Bienvenidos a mi portafolio</h2>
     <div class="container-fluid">
       <img class="card-img-right" src="img/logo.png" alt="" height="50" href="perfil.php">
       <a class="navbar-brand">Matias Uribe</a>
@@ -29,6 +30,6 @@
           </li>
         </ul>
       </div>
-      <h2 >Bienvenidos a mi portafolio</h2>
+      
     </div>
   </nav>
