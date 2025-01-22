@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <img class="card-img-right" src="img/logo.png" alt="" height="50" href="perfil.php">
-      <a class="navbar-brand" href="index.php">Matias Uribe</a>
+      <a class="navbar-brand">Matias Uribe</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
         aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       </button>
@@ -29,6 +29,6 @@
           </li>
         </ul>
       </div>
-      <h1 >Bienvenidos a mi portafolio:</h1>
+      <h2 >Bienvenidos a mi portafolio</h2>
     </div>
   </nav>
