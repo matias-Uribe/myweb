@@ -29,6 +29,6 @@
           </li>
         </ul>
       </div>
-      <h1 class="nav-link">Bienvenidos a mi portafolio:</h1>
+      <h1 >Bienvenidos a mi portafolio:</h1>
     </div>
   </nav>
