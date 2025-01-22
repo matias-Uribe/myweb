@@ -27,8 +27,10 @@
           <li class="nav-item">
             <a class="nav-link" href="peliculas.php">Peliculas</a>
           </li>
-
+          <li class="nav-item">
           <h1 class="display-3">Bienvenidos a mi portafolio:</h1>
+          </li>
+          
         </ul>
       </div>
     </div>
